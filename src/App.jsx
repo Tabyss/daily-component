@@ -1,21 +1,24 @@
 import { Routes, Route } from "react-router-dom";
+import FormPop from "./Components/Form/FormPop";
+
+import Index from "./Components/Index";
 import "./App.css";
-import FormPop from "./Components/FormPop";
-import Navbar from "./Components/Navbar";
+import Dropdown from "./Components/Dropdown/Dropdown";
 
 function App() {
   return (
-    <>
-      <FormPop />
-    </>
+    <div className="app">
+      <Link />
+    </div>
   );
 }
 
 function Link() {
   return (
     <Routes>
-      <Route path="/" element={<App />}></Route>
+      <Route path="/" element={<Index />}></Route>
       <Route path="form" element={<FormPop />}></Route>
+      <Route path="dropdown" element={<Dropdown />}></Route>
     </Routes>
   );
 }
