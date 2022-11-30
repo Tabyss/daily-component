@@ -34,7 +34,13 @@ const menu = [
   },
   {
     icon: "",
-    title: "masuk",
+    title: "Tabs",
+    child: [
+      {
+        title: "Multi Tab",
+        path: "/multitab",
+      },
+    ],
   },
 ];
 
